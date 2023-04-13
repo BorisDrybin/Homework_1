@@ -51,16 +51,39 @@
 // Напишите программу, которая на вход принимает число и выдаёт, 
 // является ли число чётным (делится ли оно на два без остатка).
 
-Console.WriteLine("Введите число");
-int number = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число");
+// int number = Convert.ToInt32(Console.ReadLine());
 
-if((number % 2) == 0)
+// if((number % 2) == 0)
+// {
+//     Console.Write(number);
+//     Console.Write(" - четное");
+// }
+// else
+// {
+//     Console.Write(number);
+//     Console.Write(" - нечетное");
+// }
+
+
+
+//  Напишите программу, которая на вход принимает число (N),
+//  а на выходе показывает все чётные числа от 1 до N.
+
+Console.WriteLine("Введите N");
+int N = Convert.ToInt32(Console.ReadLine());
+
+int x = 1;
+
+while(x <= N)
 {
-    Console.Write(number);
-    Console.Write(" - четное");
-}
-else
-{
-    Console.Write(number);
-    Console.Write(" - нечетное");
+    if((x % 2) == 0)
+    {
+        Console.WriteLine(x);
+        x ++;
+    }
+    else
+    {
+        x ++;
+    }
 }
